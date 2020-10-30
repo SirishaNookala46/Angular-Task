@@ -1,0 +1,35 @@
+<div class="modal-header">
+    <h4 class="modal-title centered-title">{{title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-6 form-group">
+                <label for="userFirstName">First Name:</label>
+                <input type="text" formControlName="first_name" placeholder="Enter the name" name="userFirstName"
+                    class="form-control ml-2" id="userFirstName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 form-group">
+                <label for="userLastName">Last Name:</label>
+                <input type="text" formControlName="last_name" name="last_name" class="form-control ml-2"
+                    id="userLastName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 form-group">
+                <label for="userEmail">Email:</label>
+                <input type="email" formControlName="email" name="email" class="form-control ml-2" id="userEmail">
+            </div>           
+        </div>
+       
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="bsModalRef.hide()">Close</button>
+        <button type="submit" class="btn btn-success" [disabled]="!addForm.valid">Save</button>
+    </div>
+</form>

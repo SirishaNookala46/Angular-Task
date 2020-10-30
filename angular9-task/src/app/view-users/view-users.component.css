@@ -1,0 +1,66 @@
+/* .fa{
+    &.fa-edit{
+        color : blue;
+    }
+    &.fa-trash{
+        color : red;
+    }
+    font-size: 25px;
+    margin-left: 5px;
+} */
+
+/*@import 'node_modules/font-awesome/css/font-awesome.css';*/
+.mt-2 thead {
+    text-align: center;
+}
+.fa 
+{
+    font-size: 25px;
+    margin-left: 5px;
+}
+button#Edit,button#Delete
+{
+    border:none;
+    margin-right: 5px;
+    background: none;
+}
+
+button#Edit:hover, button#Edit:visited, button#Edit:focus, button#Edit:focus-within, button#Edit:active,button#Delete:hover, button#Delete:visited, button#Delete:focus, button#Delete:focus-within, button#Delete:active
+{
+    outline: none !important;
+    border: none;
+}
+.odd td, .even td{
+    text-align: center;
+}
+
+.fa.fa-edit{
+    color: #f8f9fa;
+    padding: 8px;
+    background: #fca500;
+    border-radius: 100px;
+}
+
+
+.fa.fa-trash{
+    color: #f8f9fae6;
+    padding: 8px;
+    background: #e12120;
+    border-radius: 100px;
+}
+.fa.fa-plus {
+    font-size: 15px;
+    margin: 5px;
+    /* padding: 3px; */
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.25);
+}
+
+.topMargin{
+    padding-top: 10px;
+    text-align: right;
+}
